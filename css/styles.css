@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 *{box-sizing: border-box}
 @font-face {
     font-family: 'Proxima Nova';
@@ -31,6 +32,7 @@ body{
 	background: #fff;
 	padding: 200px 130px 130px;
 	line-height: 1.5;
+	box-shadow: 0 0 50px 10px rgba(0,0,0,.3);
 }
 .author span{
 	text-transform: uppercase;
@@ -49,4 +51,69 @@ body{
 	font-size: 3rem;
 	color: #8f8f8f;
 	font-style: italic;
+}
+.tools{
+	width: 75%;
+	position: absolute;
+	right: 0;
+	top: 45px;
+}
+.area{
+	background: #181818;
+	padding: 20px 0 45px 50px;
+	box-shadow: 0 0 50px 5px rgba(0,0,0,.15);
+}
+.area input[type="text"]{
+	background: transparent;
+	border:  none;
+	color: #fff;
+	font-size: 4.8rem;
+	font-family: 'Playfair Display', serif;
+	border-bottom: 2px solid rgba(255,255,255,.3);
+	display: block;
+	width: 100%;
+	padding: 0 15px 15px 0;
+
+}
+.area input[type="text"]:focus{
+	outline: none;
+	border-bottom-color:  #f1b82b;
+}
+.area label{
+	color: rgba(255,255,255,.3);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 1.4rem;
+	font-family: 'Proxima Nova';
+	font-weight: 500;
+}
+.toolbar{
+	background: #f1b82b;
+	margin-left: 50px;
+	box-shadow: 0 0 50px 5px rgba(0,0,0,.15);
+}
+.toolbar ul li{
+	display: inline-block;	
+}
+.toolbar ul{
+	margin: 0;
+	padding: 20px 40px;
+}
+
+.toolbar ul li a{
+	color: #fff;
+	padding: 0;
+	text-decoration: none;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	/* border:  1px solid red; */
+}
+.toolbar ul li:hover{
+	color: #fff;
+	text-shadow: 0 0 5px #fff;
+	transform: scale(1.2);
+	transition: all .4s ease-in-out;
 }
