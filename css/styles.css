@@ -1,0 +1,52 @@
+*{box-sizing: border-box}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proxima_nova_regular.otf') format('opentype');
+    src: url('../fonts/proxima_nova_regular.woff2') format('woff2');
+    src: url('../fonts/proxima_nova_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Futura PT Heavy';
+	src: url('../fonts/futurapt-heavy.eot');
+	src: url('../fonts/futurapt-heavy.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+html{
+	font-size: 10px;	
+}
+body{
+	background: #464f54;
+	margin: 0;
+	padding: 0;
+	color: black;
+	font-family: 'Proxima Nova', serif;
+	font-size: 2.7rem;
+}
+.article{
+	width: 90%;
+	margin: 140px auto;
+	background: #fff;
+	padding: 200px 130px 130px;
+	line-height: 1.5;
+}
+.author span{
+	text-transform: uppercase;
+}
+.author span:not(:empty):after{
+	content: ',';
+}
+.title{
+	font-size: 7.8rem;
+	line-height: 1;
+	font-family: 'Futura PT Heavy', sans-serif;
+	text-transform: uppercase;
+	margin: 40px 0 20px;
+}
+.subtitle{
+	font-size: 3rem;
+	color: #8f8f8f;
+	font-style: italic;
+}
